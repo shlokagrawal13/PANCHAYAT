@@ -1,0 +1,37 @@
+        <video
+        src={Videobg}
+        className="inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+      >
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay Content */}
+      <div className="absolute inset-0 flex items-center justify-end p-4 sm:p-8">
+  <div className="w-full sm:w-1/2 bg-white bg-opacity-50 p-4 sm:p-8 text-zinc-900 backdrop-blur-sm">
+    {["आत्मनिर्भर पंचायत, ग्रामोदय से", "भारत उदय"].map((item, index) => (
+      <div key={index} className="Hero-main">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+          {item}
+        </h1>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+<div className='border-t-[1px] border-zinc-900 mt-[40vw] flex justify-between items-center text-zinc-900 px-5'>
+  {["Trust is the ultimate strength", "Wisdom guides fair justice"].map((item, index)=>(
+  <p className='text-md font-light tracking-tight leading-none py-5'>{item}</p>
+  ))}
+  <div className='Discover-More gap-5 flex justify-between items-center text-light text-md '>
+    <div className='px-4 py-1 border-[1px] border-zinc-500 rounded-full'>Discover More</div>
+    <div className='w-10 h-10 rounded-full border-[1px] border-zinc-400 flex items-center justify-center'>
+    <span className='rotate-[45deg]'>
+    <FaArrowUpLong />
+    </span>
+    </div>
+  </div>
+</div>
